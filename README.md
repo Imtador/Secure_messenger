@@ -15,6 +15,7 @@
 - Implement authentication with input validation and token issuance.
 - Configure secure password storage (Argon2id) and JWT management (access + refresh).
 - Implement user profile retrieval and updates.
+- save progress of project with version control tool as git
 
 ### Requirements
 - RESTful API, JSON responses, standard HTTP status codes.
@@ -23,6 +24,7 @@
 - Field validation: length, format, username/email uniqueness.
 - Errors handled centrally; internal server details are not exposed.
 - Client generates ECDH key pair on registration; public key stored on server, private key encrypted with password (PBKDF2 + AES-256-GCM) and stored in browser IndexedDB.
+- working version control
 
 ### ✅ Acceptance Criteria
 - User can register and receive a token/session.
