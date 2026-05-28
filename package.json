@@ -1,0 +1,19 @@
+{
+  "name": "securechat-messenger",
+  "version": "1.0.0",
+  "description": "Secure encrypted web messenger with 1-to-1 chats, group chats, and file transfer",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "test": "npm run test --workspaces"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
